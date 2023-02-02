@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Aplicações Diversas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <button class="btMenu" title="Menu"><img src="./Assets/Menu-menu3Pontos.png" alt="Botão abrir menu"></button>
+
+    <nav class="menu"></nav>
+
+    <section class="seçao PagInicial mainBg" id="pagInicial">
+        <div class="containerPagInicial">
+            <h1>APLICAÇÕES DIVERSAS</h1>
+            <h2>INTUITO DA PÁGINA</h2>
+            <p>Essa página foi criada com o intuito de aplicar o conhecimento aprendido em JavaScript,</p>
+            <p>HTML5 e CSS5, trazendo para o site aplicações simples, permitindo assim a</p>
+            <p> implementação de novas ideias e a fixação de diversos conteúdos utilizados em aulas.</p>
+            <h2>APLICAÇÕES</h2>
+            <h3>Conteúdos encontrados:</h3>
+            <ul>
+                <li>Cronômetro</li>
+                <li>Calculadora Simples</li>
+                <li>Calculadora de IMC</li>
+                <li>Formulário</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="seçao" id="cronometro">
+        <h2>Cronômetro Simples</h2>
+        <div class="containerCronometro">
+            <h3>Meu Timer!</h3>
+            <div class="timer"><b>00:00:00</b></div>
+            <div class="containerBotaoFlex">
+                <button id="iniciar"><b>Iniciar</b></button>
+                <button id="pausar"><b>Pausar</b></button>
+                <button id="zerar"><b>Resetar</b></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="seçao mainBg" id="Cal">
+        <h1>Calculadora Simples</h1>
+
+        <div class="calculadoraContainer">
+            <h2>Calculadora</h2>
+
+            <table class="calculadora">
+                <tr>
+                    <td colspan="4"><input type="text" class="display"></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn btn-clear">C</button></td>
+                    <td><button class="btn btn-num">(</button></td>
+                    <td><button class="btn btn-num">)</button></td>
+                    <td><button class="btn btn-num">/</button></td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="btn btn-num">7</button></td>
+                    <td><button class="btn btn-num">8</button></td>
+                    <td><button class="btn btn-num">9</button></td>
+                    <td><button class="btn btn-num">*</button></td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="btn btn-num">4</button></td>
+                    <td><button class="btn btn-num">5</button></td>
+                    <td><button class="btn btn-num">6</button></td>
+                    <td><button class="btn btn-num">+</button></td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="btn btn-num">1</button></td>
+                    <td><button class="btn btn-num">2</button></td>
+                    <td><button class="btn btn-num">3</button></td>
+                    <td><button class="btn btn-num">-</button></td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="btn btn-num">.</button></td>
+                    <td><button class="btn btn-num">0</button></td>
+                    <td><button class="btn btn-del">&laquo;</button></td>
+                    <td><button class="btn btn-eq">=</button></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </section>
+
+    <section class="seçao" id="calImc">
+
+        <div class="containerImc">
+
+            <h2>Tabela IMC</h2>
+
+            <div class="flexImc">
+                <div class="containerGridImc">
+                    <h3>IMC</h3>
+                    <p>Menos do que 18,5</p>
+                    <p>Entre 18,5 e 24,9</p>
+                    <p>Entre 25 e 29,9</p>
+                    <p>Entre 30 e 34,9</p>
+                    <p>Entre 35 e 39,9</p>
+                    <p>Mais do que 40</p>
+                </div>
+
+                <div class="containerGridImc">
+                    <h3>Resultado</h3>
+                    <p>Abaixo do peso</p>
+                    <p>Peso normal</p>
+                    <p>Sobrepeso</p>
+                    <p>Obesidade grau 1</p>
+                    <p>Obesidade grau 2</p>
+                    <p>Obesidade grau 3</p>
+                </div>
+            </div>
+
+            <h3>Calcule seu IMC</h3>
+
+            <form action="" method="get" class="formImc">
+                <label for="Altura"><b>Altura:</b></label><br>
+                <input type="text" id="Altura" placeholder="Digite sua altura aqui. Ex: 1.70"><br>
+
+                <label for="Peso"><b>Peso:</b></label><br>
+                <input type="text" id="Peso" placeholder="Digite seu peso aqui. Ex: 60"><br>
+
+                <button>Enviar</button>
+            </form>
+
+            <div class="resultado"></div>
+
+        </div>
+
+    </section>
+
+    <section class="seçao mainBg" id="form">
+        <div class="containerForm">
+            <h1>Formulário de cadastro</h1>
+            <ul>
+                <li>Nenhum campo pode estar vazio.</li>
+                <li>Usuario só podera conter letras ou números.</li>
+                <li>Usuario deverá ter entre 3 e 12 caracteres.</li>
+                <li>Senha precisa ter entre 6 e 12 caracteres.</li>
+            </ul>
+
+            <form action="/" method="post" class="formulario">
+                <b><label for="nome" >Nome:</label><br></b>
+                <input type="text" class="validar" id="nome" placeholder="Ex: Gabriel"><br>
+
+                <b><label for="sobrenome">Sobrenome:</label><br></b>
+                <input type="text" class="validar" id="sobrenome" placeholder="Ex: Neves"><br>
+
+                <b><label for="cpf">CPF:</label><br></b>
+                <input type="text" class="validar cpff" id="cpf" placeholder="Ex: 070.987.720-03"><br>
+
+                <b><label for="usuario">Usuário:</label><br></b>
+                <input type="text" class="validar usuarioo" id="usuario" placeholder="Ex: GabrielSN"><br>
+
+                <b><label for="senha">Senha:</label><br></b>
+                <input type="password" class="validar" id="senha" placeholder="Digite sua senha:"><br>
+
+                <b><label for="repetirSenha">Repetir Senha:</label><br></b>
+                <input type="password" class="validar" id="repetirSenha" placeholder="Repita sua senha:"><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+
+</html>
